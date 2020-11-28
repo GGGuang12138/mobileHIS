@@ -18,3 +18,7 @@ create table table_name
 );
 
 ```
+create table table_name
+(
+	patient_id BIGINT auto_increment,
+);
