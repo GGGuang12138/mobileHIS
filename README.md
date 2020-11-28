@@ -27,8 +27,23 @@ create table table_name
 	constraint table_name_pk
 		primary key (id)
 );
-create table table_name
-(
-	patient_id BIGINT auto_increment,
-);
+DROP TABLE IF EXISTS `patient_record`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `patient_record` (
+  `patient_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `patient_name` varchar(45) DEFAULT NULL,
+  `patient_sex` tinyint(1) DEFAULT NULL,
+  `patient_number` bigint(20) DEFAULT NULL,
+  `patient_age` int(11) DEFAULT NULL,
+  `patient_address` varchar(255) DEFAULT NULL,
+  `patient_department` varchar(45) DEFAULT NULL,
+  `patient_inbed` tinyint(1) DEFAULT NULL,
+  `patient_room` varchar(45) DEFAULT NULL,
+  `patient_bed` varchar(45) DEFAULT NULL,
+  `in_time` bigint(20) DEFAULT NULL,
+  `out_time` bigint(20) DEFAULT NULL,
+  `patient_doctorname` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`patient_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
