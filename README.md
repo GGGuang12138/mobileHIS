@@ -27,10 +27,8 @@ create table table_name
 	constraint table_name_pk
 		primary key (id)
 );
-
-
-```
 create table table_name
 (
 	patient_id BIGINT auto_increment,
 );
+```
