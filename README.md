@@ -4,7 +4,7 @@
 ##2.创建数据表
 - 默认表名doctor、user、patient_record
 ```sql
-create table table_name
+create table doctor
 (
 	doctor_id BIGINT auto_increment,
 	doctor_name VARCHAR(45) not null,
@@ -16,7 +16,7 @@ create table table_name
 	constraint table_name_pk
 		primary key (doctor_id)
 );
-create table table_name
+create table user
 (
 	id INT auto_increment,
 	username VARCHAR(255) not null,
